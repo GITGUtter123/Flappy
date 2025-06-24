@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Super Flappy Bird</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div id="scoreDisplay">0</div>
+    <div id="highScoreDisplay">High: 0</div>
+    
+    <div id="gameOver" class="hidden">
+      <h2>Game Over!</h2>
+      <p>Score: <span id="finalScore">0</span></p>
+      <p id="newHighScore" class="hidden">New High Score!</p>
+      <button id="restartButton">Play Again</button>
+    </div>
+    
+    <div id="startScreen">
+      <h1 class="floating">Super Flappy</h1>
+      <p>Click or press Space to jump</p>
+      <button id="startButton">Start Game</button>
+      
+      <div class="theme-selector">
+        <div class="theme-btn" style="background: linear-gradient(to bottom, #56ccf2, #2f80ed);" data-theme="default"></div>
+        <div class="theme-btn" style="background: linear-gradient(to bottom, #a8ff78, #78ffd6);" data-theme="nature"></div>
+        <div class="theme-btn" style="background: linear-gradient(to bottom, #ff416c, #ff4b2b);" data-theme="sunset"></div>
+        <div class="theme-btn" style="background: linear-gradient(to bottom, #8e2de2, #4a00e0);" data-theme="purple"></div>
+        <div class="theme-btn" style="background: linear-gradient(to bottom, #000000, #434343);" data-theme="dark"></div>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
